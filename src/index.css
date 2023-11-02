@@ -19,3 +19,27 @@ code {
   height: 100vh;
   background-color: bisque;
 }
+.wrapper p {
+  font-size: 30px;
+  font-weight: 500;
+  font-size: calc(20px + 10 * (100vw / 1280));
+}
+@media (max-width: 767px) {
+  .wrapper p {
+    font-size: calc(20px + (10 + 10 * 0.7) * ((100vw - 320px) / 1280));
+  }
+}
+
+.wrapper h1,
+h2 {
+  /* font-size: 40px; */
+  /*40px -24px = 16*/
+  font-weight: 700;
+  font-size: calc(24px + 16 * (100vw / 1280));
+}
+@media (max-width: 767px) {
+  .wrapper h1,
+  h2 {
+    font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280));
+  }
+}
